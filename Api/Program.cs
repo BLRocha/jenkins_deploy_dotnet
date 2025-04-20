@@ -34,7 +34,7 @@ app.MapGet("/weatherforecast", () =>
     .WithName("GetWeatherForecast")
     .WithOpenApi();
 
-app.MapGet("/", () => Results.Ok($"Leandro Rocha App Deplay ok {DateTime.Now:dd/MM/yyyy hh:mm:ss}"));
+app.MapGet("/", () => Results.Ok($"Leandro Rocha App Deplay data {DateTime.Now:dd/MM/yyyy hh:mm:ss}"));
 
 app.Run();
 
